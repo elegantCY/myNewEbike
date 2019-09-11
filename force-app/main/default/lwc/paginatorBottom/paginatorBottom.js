@@ -1,4 +1,4 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,api } from 'lwc';
 export default class PaginatorBottom extends LightningElement {
        // Api considered as a reactive public property.  
    @api totalrecords;  
