@@ -20,3 +20,4 @@ before_install:
 - sfdx force:auth:jwt:grant -u $USERNAME -f assert/server.key -i $CONSUMERKEY -s -a ebikesDE
 script:
 - sfdx force:org:display -u ebikesDE
+- sfdx force:source:deploy -x manifest/package.xml
